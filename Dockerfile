@@ -2,7 +2,7 @@
 FROM node:14
 
 # set working directory
-RUN sudo mkdir -p /usr/src/app
+RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
 # install app dependencies

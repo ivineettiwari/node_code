@@ -48,7 +48,7 @@ function initExpress() {
     app.use(Express.static('public'));
     https.createServer(app, function (req, res) {
     }).listen(8095, function () {
-        console.log("Twilio WhatsApp server listening on port 8095 on HTTPS channel");
+        console.log("Server listening on port 8095 on HTTPS channel");
     });
 
     app.use(timeout(120000, { "respond": true }));
